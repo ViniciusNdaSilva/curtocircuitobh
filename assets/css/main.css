@@ -8016,6 +8016,10 @@ input.main-search-input:-ms-input-placeholder {
   }
 }
 
+.size-icon-card {
+  width: 80px;
+}
+
 .counters h2 {
   color: #ff723a;
   font-size: 46px;
