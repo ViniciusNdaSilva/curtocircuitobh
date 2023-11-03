@@ -627,23 +627,6 @@ section-title
   }
 }
 
-#scrollUp {
-  background: #ff723a;
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  font-size: 15px;
-  border-radius: 50%;
-  line-height: 45px;
-  text-align: center;
-}
-
-#scrollUp i {
-  color: #ffffff;
-}
-
 /*--
     - Overlay
 ------------------------------------------*/
@@ -8748,4 +8731,57 @@ input.main-search-input:-ms-input-placeholder {
   right: 20.57%;
   bottom: 65px;
   z-index: -1;
+}
+
+.botao-whats {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* #25d366 */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  background-color: #25d36500;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  animation: floatAnimation 3s ease infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Adicione regras de estilo para telas menores */
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+  }
+}
+
+/* Adicione regras de estilo para telas muito pequenas */
+@media (max-width: 480px) {
+  .whatsapp-button {
+    bottom: 5px;
+    right: 5px;
+    padding: 6px;
+  }
 }
