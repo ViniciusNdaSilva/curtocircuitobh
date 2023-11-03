@@ -8733,55 +8733,51 @@ input.main-search-input:-ms-input-placeholder {
   z-index: -1;
 }
 
-.botao-whats {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-/* #25d366 */
-
+/* Estilos para o botão de WhatsApp flutuante */
 .whatsapp-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: inline-block;
-  background-color: #25d36500;
-  padding: 10px;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  animation: floatAnimation 3s ease infinite;
+  bottom: 20px; /* Distância da parte inferior da janela */
+  right: 20px; /* Distância da parte direita da janela */
+  z-index: 999; /* Garante que o botão fique acima de outros elementos */
 }
 
-@keyframes floatAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+.whatsapp-button a {
+  display: block;
+
+  color: #fff; /* Cor do texto */
+  border-radius: 50%; /* Deixa o botão redondo */
+  width: 60px; /* Largura do botão */
+  height: 60px; /* Altura do botão */
+  text-align: center;
+  font-size: 24px; /* Tamanho da fonte do ícone */
+  line-height: 60px; /* Centraliza verticalmente o ícone */
+  text-decoration: none;
+  transition: background-color 0.3s; /* Efeito de transição da cor de fundo */
+  animation: bounce 1s infinite; /* Animação de salto contínuo */
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
   100% {
     transform: translateY(0);
   }
+  40% {
+    transform: translateY(-5px); /* Altura do salto */
+  }
 }
 
-/* Adicione regras de estilo para telas menores */
+/* Tornar o botão responsivo */
 @media (max-width: 768px) {
   .whatsapp-button {
     bottom: 10px;
     right: 10px;
-    padding: 8px;
   }
-}
-
-/* Adicione regras de estilo para telas muito pequenas */
-@media (max-width: 480px) {
-  .whatsapp-button {
-    bottom: 5px;
-    right: 5px;
-    padding: 6px;
+  .whatsapp-button a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
   }
 }
