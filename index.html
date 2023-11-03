@@ -180,6 +180,20 @@
     <!-- slide-bar CELULAR -->
 
     <main>
+      <!-- cookie -->
+
+      <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-text">
+          Este site utiliza cookies para garantir a melhor experiência. Ao
+          continuar, você concorda com nossa política de cookies.
+        </div>
+        <div class="cookie-button">
+          <button onclick="aceitarCookies()">Aceitar</button>
+        </div>
+      </div>
+
+      <!-- cookie -->
+
       <!-- PRIMEIRA PAGINA START -->
       <section class="slider-area pt-180 pt-xs-150 pt-150 pb-xs-35">
         <img class="sl-shape shape_01" src="assets/img/icon/01.svg" alt="" />
@@ -1447,6 +1461,18 @@
     <!--footer-area end-->
 
     <!-- JS here -->
+
+    <script>
+      function aceitarCookies() {
+        document.getElementById("cookieBanner").style.display = "none";
+        // Aqui você pode adicionar o código para definir um cookie ou fazer outras ações relacionadas aos cookies.
+      }
+
+      // Verificar se o cookie de aceitação já está definido e ocultar o banner se necessário
+      if (document.cookie.indexOf("aceitouCookies=true") !== -1) {
+        document.getElementById("cookieBanner").style.display = "none";
+      }
+    </script>
 
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
