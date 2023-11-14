@@ -51,6 +51,10 @@ body {
   color: #707070;
 }
 
+header {
+  z-index: 5 !important;
+}
+
 .f-left {
   float: left;
 }
@@ -8216,6 +8220,7 @@ input.main-search-input:-ms-input-placeholder {
   background-image: unset;
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
+  z-index: 99999;
 }
 
 .accordion-two .collapsed {
@@ -8259,6 +8264,18 @@ input.main-search-input:-ms-input-placeholder {
 
 .faq_btn {
   border-radius: 5px;
+}
+
+.positon-front {
+  z-index: 4 !important;
+}
+
+.positon-front-2 {
+  z-index: 10 !important;
+}
+
+.positon-front-3 {
+  z-index: 9 !important;
 }
 
 .about-section-wrapper .what-blur-shape-two {
