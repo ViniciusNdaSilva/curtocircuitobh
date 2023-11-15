@@ -8838,3 +8838,31 @@ button:hover {
   align-items: center !important;
   justify-content: center !important;
 }
+
+.sobra-card {
+  box-shadow: 5px 5px 8px 0px #888888,
+    /* Sombra superior direita */ -5px 5px 8px 0px #888888,
+    /* Sombra superior esquerda */ 5px -5px 5px 0px #888888,
+    /* Sombra inferior direita */ -5px -5px 8px 0px #888888; /* Sombra inferior esquerda */
+  border-radius: 15px;
+  padding-top: 10px;
+  text-align: start;
+}
+
+ 
+                     AFA – MATHEUS HENRIQUE
+                    ARAÚJO DA CRUZ PEREIRA AFA – PEDRO ALMEIDA GARCIA AFA –
+                    PEDRO AUGUSTO ROCHA OLIVEIRA AFA – PEDRO HENRIQUE MAGALHÃES
+                    DA SILVA AFA – PEDRO HENRIQUE SILVA LAGUARDIA AFA – VITOR
+                    FARIA DOMICIANO FERREIRA AFA – VITOR PASSOS RIBEIRO DE
+                    OLIVEIRA AFA – VITOR RIAN SOUZA SILVA ESPCEX – ANDRÉ LUIZ
+                    RAIA VIEIRA DA SILVA ESPCEX – BRUNO RODRIGUES BARROS
+                    ESPCEX – CARLOS JÚNIO FARIA COSTA ESPCEX – ISABELLA COELHO
+                    DE OLIVEIRA ESPCEX – LUIZ FELIPE DO BOM CONSELHO DA SILVA
+                    ESPCEX – MARIA JÚLIA TEODORO VILAMAIOR ESPCEX – PEDRO
+                    HENRIQUE MAGALHÃES DA SILVA ESPCEX – VITOR PASSOS RIBEIRO DE
+                    OLIVEIRA EFOMM – BERNARDO CAMPOS CAMISASSA EFOMM – BRUNO
+                    SIMÕES NAGEM EFOMM – GUSTAVO VIEIRA TORRES EFOMM – PEDRO
+                    ALMEIDA GARCIA EFOMM – VITOR PASSOS RIBEIRO DE OLIVEIRA EN –
+                    BRUNO RODRIGUES BARROS EN – FÁBIO BRAGA GIUGNI EN – GUSTAVO
+                    FALCO VIEIRA EN – ISABELLA COELHO DE OLIVEIRA EN – PEDRO AUGUSTO ROCHA OLIVEIRA
