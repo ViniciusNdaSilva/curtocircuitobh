@@ -8861,3 +8861,63 @@ button:hover {
     flex-direction: column;
   }
 }
+
+.cards-pai {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  flex-direction: row;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card-image {
+  max-width: 100%;
+  margin-bottom: 5px;
+  transition: transform 0.3s; /* Adiciona transição para o efeito de zoom */
+}
+
+.card-image:hover {
+  transform: scale(1.1); /* Ajusta o efeito de zoom ao passar o mouse */
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.card-body {
+  padding: 10px;
+  display: none;
+}
+
+/* Adicionando regras de mídia para tornar responsivo */
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards-pai {
+    flex-direction: column;
+  }
+}
